@@ -1,0 +1,23 @@
+# Secrets — never commit real credentials
+.env
+*.env
+**/local.cfg.real
+
+# Data files (spreadsheets, exports) — these belong in Drive, not git history
+*.xlsx.bak
+to_process_list.txt
+to_delete_list.txt
+saf_coes_full/
+saf_coes_test*/
+
+# Backups
+*.dump
+*.tar.gz
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor noise
+.DS_Store
+.~lock.*

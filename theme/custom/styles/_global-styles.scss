@@ -1,0 +1,9 @@
+// Add any global css for the theme here
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+// imports the base global style
+@import '../../../styles/_global-styles.scss';

@@ -1,0 +1,32 @@
+ui:
+  ssl: false
+  host: 0.0.0.0
+  port: 4000
+  baseUrl: http://45.7.228.76
+  nameSpace: /
+
+rest:
+  ssl: false
+  host: 45.7.228.76
+  port: 80
+  nameSpace: /server
+  # Internal, container-to-container URL used during server-side rendering
+  # (bypasses nginx for speed; avoids an extra network hop through the host)
+  ssrBaseUrl: http://dspace:8080/server
+
+themes:
+  # COES branded theme (logo, colors, home page text) — extends the base
+  # "dspace" theme so anything not overridden in "custom" still renders normally
+  - name: custom
+    extends: dspace
+    prefetch: true
+    headTags:
+      - tagName: link
+        attributes:
+          rel: icon
+          href: assets/custom/images/favicons/favicon.ico
+          sizes: any
+      - tagName: link
+        attributes:
+          rel: apple-touch-icon
+          href: assets/custom/images/favicons/apple-touch-icon.png

@@ -1,0 +1,15 @@
+// Override or add CSS variables for your theme here
+
+:root {
+  --ds-header-logo-height: 56px;
+  --ds-header-logo-height-xs: 42px;
+  --ds-header-icon-color: #{$link-color};
+  --ds-header-icon-color-hover: #{darken($link-color, 15%)};
+
+  // COES home page welcome banner: dark navy background with white text,
+  // matching the dark sections used on coes.cl
+  --ds-home-news-background-color: #{$coes-navy};
+  --ds-home-news-text-color: #fff;
+  --ds-home-news-link-color: #{$coes-yellow};
+  --ds-home-news-link-hover-color: #fff;
+}
